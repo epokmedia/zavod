@@ -26,7 +26,8 @@ A worker can emit from 0 to n tuple for each tuple received.
 Workers can keep some tuple in memory for further processing. One common use case is for data aggregation or join. For example you collect some tweets and keep them in memory until you receive some additional data to be attached to them.  
 
 With providers and worker configured the next step is to design the way they are connected.  
-This is done via the `link` method of the `Computation` class. You can link two components between them with keeping in mind :
+This is done via the `link` method of the `Computation` class. You can link two components between them with keeping in mind :  
+
 - **A provider will only emit tuple** so you can't have a provider in your output.
 - You can't link a component to itself (no direct cycle)
 
@@ -61,6 +62,7 @@ Example applications :
 - Filter, Enrich & analyze Twitter feeds, RSS feeds, ...
 - Easily count and create trending data from multiple sources
 - Process data before inserting them into a database
+
 
 ### Is it suitable for production use ?
 
