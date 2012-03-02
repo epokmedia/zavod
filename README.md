@@ -1,10 +1,10 @@
-# ZAVØD (zavód)
+# ZAVOD (zavód)
 
 ![zavod: realtime computation engine with guaranteed message processing capabilities ](http://www.epokmedia.fr/images/zavod_logo.png)
 
 ## A Simple to use realtime computation engine with guaranteed message processing capabilities
 
-**ZAVØD** is inspired by the _Twitter Storm_ project originally created by _Nathan Marz_.  
+**ZAVOD** is inspired by the _Twitter Storm_ project originally created by _Nathan Marz_.  
 
 ## Concepts
 
@@ -31,6 +31,7 @@ This is done via the `link` method of the `Computation` class. You can link two 
 - You can't link a component to itself (no direct cycle)
 
 Here is an example computation design (`p` stand for provider, `w` for worker and `c` for computation) :  
+
 ````
 /*
 	p1 --> w1 >
@@ -55,7 +56,8 @@ c.link('w2', 'w3');
 Unlike Twitter Storm, ZAVOD is not distributed **for now**. You might be limited in terms of processing power but ZAVOD will help you in having a better organized computation flow.
 
 ZAVOD can be used to easily compute some data from differents sources like Twitter, RSS, scraping, etc...
-Example applications :
+Example applications :  
+
 - Filter, Enrich & analyze Twitter feeds, RSS feeds, ...
 - Easily count and create trending data from multiple sources
 - Process data before inserting them into a database
