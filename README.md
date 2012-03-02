@@ -12,7 +12,8 @@ The main purpose of ZAVOD is to help define and execute complex non-finite realt
 The main class used in ZAVOD to represent a unit of data is a **tuple**. A tuple is simply a class containing arbitrary data (of any type).  
 Every computation can be seen has multiple streams of tuples.
 
-ZAVOD require you to decompose your computation in two kinds of components :
+ZAVOD require you to decompose your computation in two kinds of components :  
+
 - Providers
 - Workers
 
